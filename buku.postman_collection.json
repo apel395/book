@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "3fa4ac94-32a0-42fc-b550-61ca4edfcfb6",
+		"name": "buku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "buku/pinjam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book\":\"duadunia\",\n    \"murid\":\"surya\"    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/pinjam",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pinjam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/input",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book\":\"geek myth\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000//buku",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"buku"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/get/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000//buku/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"buku",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/get/book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000//buku/legenda",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"buku",
+						"legenda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/inputstudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"murid\":\"sudirman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/stud",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/getstudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/stud/sudirman",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stud",
+						"sudirman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/kembaliin buku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book\":\"legenda\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/balikin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"balikin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buku/denda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/denda",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"denda"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
